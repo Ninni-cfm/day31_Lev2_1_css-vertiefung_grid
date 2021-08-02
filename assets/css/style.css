@@ -1,0 +1,87 @@
+/* hard reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightgray;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+section {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(3, 30vmin);
+    grid-template-rows: repeat(3, 30vmin);
+    justify-content: center;
+    align-content: center;
+    gap: 2vmin;
+}
+
+/* all divs have the same size */
+div {
+    width: 30vmin;
+    height: 30vmin;
+}
+.container {
+    box-shadow: 10px 10px 10px #00000066;
+    align-self: center;
+    overflow: hidden;
+}
+.container:nth-of-type(1) .image {
+    background: url(https://i.picsum.photos/id/326/300/300.jpg?hmac=6D-dIdDUItcc5CbbtBYuvUB5hlarjYnsJumzXj_2edI)
+        center/cover no-repeat;
+}
+.container:nth-of-type(2) .image {
+    background: url(https://i.picsum.photos/id/830/300/300.jpg?hmac=ir_VjfhHplWelY0wWwUlqdRl_N4KTR-caNJPFMUz2r8)
+        center/cover no-repeat;
+}
+.container:nth-of-type(3) .image {
+    background: url(https://i.picsum.photos/id/212/300/300.jpg?hmac=AEZtUix5plqsO9EeUG371nYCZTjCTZeFxHcU2pTWFzo)
+        center/cover no-repeat;
+}
+.container:nth-of-type(4) .image {
+    background: url(https://i.picsum.photos/id/902/300/300.jpg?hmac=gM4rY_O6kTyS17QiFPazNkbTQIu8L_SHynhoYfLn8NY)
+        center/cover no-repeat;
+}
+.container:nth-of-type(5) .image {
+    background: url(https://i.picsum.photos/id/35/300/300.jpg?hmac=rMMbUKwEGr_LUSBExmyYWLqK7-RGUNnbO8Y3htN5LFo)
+        center/cover no-repeat;
+}
+.container:nth-of-type(6) .image {
+    background: url(https://i.picsum.photos/id/62/300/300.jpg?hmac=JkaOmZr8So-hvPO3Mya00sE2pvIQtLZjGMldqbPFiqc)
+        center/cover no-repeat;
+}
+.container:nth-of-type(7) .image {
+    background: url(https://i.picsum.photos/id/842/300/300.jpg?hmac=uqKggbY3dFXd9a15cU2P6Dp7tZCk3JQANKLni3veZiE)
+        center/cover no-repeat;
+}
+.container:nth-of-type(8) .image {
+    background: url(https://i.picsum.photos/id/774/300/300.jpg?hmac=stZMi6N_KwAYmgPdHkh0LKe3D2y3qNz3X8HTYEeLHCs)
+        center/cover no-repeat;
+}
+.container:nth-of-type(9) .image {
+    background: url(https://i.picsum.photos/id/107/300/300.jpg?hmac=FI0__yexKtFkHnuBfrFrQQmagFU6cjt7IB21YVmOTO0)
+        center/cover no-repeat;
+}
+
+.overlay {
+    background: #00000066;
+    color: #ffffff99;
+
+    position: relative;
+    top: 0px;
+
+    text-align: center;
+    padding-top: 15vmin;
+
+    transition: top 1.5s ease;
+}
+.image:hover ~ .overlay {
+    top: -30vmin;
+}
